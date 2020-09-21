@@ -11,7 +11,9 @@
     <name>hulena</name>
 
     <modules>
+        <module>hu-base</module>
         <module>hu-avaitor</module>
+        <module>hu-bone</module>
     </modules>
 
     <properties>
@@ -52,10 +54,21 @@
         <dependencies>
             <dependency>
                 <groupId>com.pg633</groupId>
+                <artifactId>hu-base</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pg633</groupId>
                 <artifactId>hu-avaitor</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.pg633</groupId>
+                <artifactId>hu-bone</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
 
 
@@ -75,17 +88,17 @@
     <!--    </repositories>-->
 
     <repositories>
-<!--        <repository>-->
-<!--            <id>maven-net-cn</id>-->
-<!--            <name>Maven China Mirror</name>-->
-<!--            <url>http://maven.net.cn/content/groups/public/</url>-->
-<!--            <releases>-->
-<!--                <enabled>true</enabled>-->
-<!--            </releases>-->
-<!--            <snapshots>-->
-<!--                <enabled>false</enabled>-->
-<!--            </snapshots>-->
-<!--        </repository>-->
+        <!--        <repository>-->
+        <!--            <id>maven-net-cn</id>-->
+        <!--            <name>Maven China Mirror</name>-->
+        <!--            <url>http://maven.net.cn/content/groups/public/</url>-->
+        <!--            <releases>-->
+        <!--                <enabled>true</enabled>-->
+        <!--            </releases>-->
+        <!--            <snapshots>-->
+        <!--                <enabled>false</enabled>-->
+        <!--            </snapshots>-->
+        <!--        </repository>-->
         <repository>
             <id>spring</id>
             <url>https://maven.aliyun.com/repository/spring</url>

@@ -12,18 +12,6 @@
     <artifactId>hu-avaitor</artifactId>
     <version>${project.version}</version>
 
-    <properties>
-        <commons.verison>1.9.4</commons.verison>
-        <commons.lang.verison>3.11</commons.lang.verison>
-
-        <!-- junit -->
-<!--        <junit.version>4.12</junit.version>-->
-<!--        <junit.jupiter.version>5.0.2</junit.jupiter.version>-->
-<!--        <junit.vintage.version>${junit.version}.2</junit.vintage.version>-->
-<!--        <junit.platform.version>1.0.2</junit.platform.version>-->
-        <!-- -->
-
-    </properties>
 
     <dependencies>
         <dependency>
@@ -31,34 +19,12 @@
             <artifactId>aviator</artifactId>
             <version>${aviator.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>${guava.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
 
         <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-            <version>${commons.verison}</version>
+            <groupId>com.pg633</groupId>
+            <artifactId>hu-base</artifactId>
+            <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${commons.lang.verison}</version>
-        </dependency>
-
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -77,7 +43,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19</version>
             </plugin>
-
         </plugins>
     </build>
 
