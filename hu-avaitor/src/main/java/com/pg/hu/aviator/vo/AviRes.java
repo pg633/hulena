@@ -18,7 +18,7 @@ public class AviRes<T> {
     T value;
     String msg;
 
-    enum Code {
+    public enum Code {
         SUCCESS, COMPILE_ERROR, EXECUTE_ERROR, DATETYPE_ERROR, CAST_ERROR
     }
 
